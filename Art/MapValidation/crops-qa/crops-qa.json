@@ -1,0 +1,145 @@
+{
+  "schema": "generate2dmap.crops_qa.v1",
+  "status": "pass",
+  "method": "validate-crops: cover-crop window per aspect and focus (divided by --zoom), subject box margins to each window edge in plate pixels.",
+  "notProven": [
+    "Subject boxes are taken as given; the tool does not find subjects in the art.",
+    "Windows model a runtime that cover-crops the plate at each aspect around the focus (and divides by the plate-pan zoom); letterboxing, safe-area insets, UI overlays and other stretch rules are not modelled.",
+    "A box inside the window can still read badly at gameplay scale; look at the overlay."
+  ],
+  "checks": [
+    {
+      "id": "crop 3:1 focus 0.5,0.5",
+      "status": "pass",
+      "value": {
+        "aspect": "3:1",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "zoom": 1.0,
+        "window": [
+          0.0,
+          0.0,
+          1536.0,
+          512.0
+        ],
+        "subjects": {
+          "dormitory": {
+            "left": 0.86584,
+            "top": 89.735648,
+            "right": 1232.956032,
+            "bottom": 141.732221,
+            "min": 0.86584,
+            "visible_fraction": 1.0
+          },
+          "education-yard": {
+            "left": 290.92221,
+            "top": 127.832604,
+            "right": 929.046223,
+            "bottom": 140.866381,
+            "min": 127.832604,
+            "visible_fraction": 1.0
+          },
+          "arena": {
+            "left": 598.295378,
+            "top": 163.332041,
+            "right": 605.222097,
+            "bottom": 137.403021,
+            "min": 137.403021,
+            "visible_fraction": 1.0
+          },
+          "performance-stage": {
+            "left": 913.461105,
+            "top": 74.15053,
+            "right": 321.226607,
+            "bottom": 137.403021,
+            "min": 74.15053,
+            "visible_fraction": 1.0
+          },
+          "trading-post": {
+            "left": 1220.834273,
+            "top": 126.966764,
+            "right": 9.524239,
+            "bottom": 136.537182,
+            "min": 9.524239,
+            "visible_fraction": 1.0
+          }
+        },
+        "cut": []
+      },
+      "threshold": {
+        "min_margin_px": 0.0
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../desktop-crop/background.png",
+      "sha256": "ae01893f20662565ad5b99e43fd0d6b756c1fe0a8a6da51171de3f303445d77c",
+      "bytes": 1332491
+    }
+  ],
+  "outputs": [
+    {
+      "path": "crops-overlay.png",
+      "sha256": "f903eb74fd7ea67f070fc9d2abfe07df7224b070161786eb1ba416e5c81e230b",
+      "bytes": 1261007
+    }
+  ],
+  "tool": {
+    "name": "conform_background",
+    "version": "0.4.0"
+  },
+  "plate_size": [
+    1536,
+    512
+  ],
+  "subjects": [
+    {
+      "id": "dormitory",
+      "box": [
+        0.86584,
+        89.735648,
+        303.043968,
+        370.267779
+      ]
+    },
+    {
+      "id": "education-yard",
+      "box": [
+        290.92221,
+        127.832604,
+        606.953777,
+        371.133619
+      ]
+    },
+    {
+      "id": "arena",
+      "box": [
+        598.295378,
+        163.332041,
+        930.777903,
+        374.596979
+      ]
+    },
+    {
+      "id": "performance-stage",
+      "box": [
+        913.461105,
+        74.15053,
+        1214.773393,
+        374.596979
+      ]
+    },
+    {
+      "id": "trading-post",
+      "box": [
+        1220.834273,
+        126.966764,
+        1526.475761,
+        375.462818
+      ]
+    }
+  ]
+}

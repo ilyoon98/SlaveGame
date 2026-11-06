@@ -1,0 +1,36 @@
+{
+  "reference": "Art/Source/swordsman-animation-baseline.png",
+  "invariants": {
+    "weaponHand": "screen-right/front hand connected to front shoulder",
+    "emptyHand": "screen-left/rear empty hand",
+    "facing": "right",
+    "palette": "brown hair, red cape, navy tunic, cream sleeves, silver shoulder and sword, brown leather"
+  },
+  "frameContract": {
+    "frameCount": 14,
+    "keyframes": [
+      2,
+      5,
+      8,
+      11
+    ],
+    "inbetweens": [
+      1,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      12
+    ],
+    "baseline": [
+      0,
+      13
+    ]
+  },
+  "prompts": {
+    "walk": "Use case: identity-preserve game animation key-pose sheet. Reference image is the EXACT character identity, not loose inspiration. One adult male swordsman, brown swept spiky hair, small cheek scar, simple red scarf-cape to mid thigh, navy tunic, plain brown belt, cream sleeves, a simple silver shoulder plate, brown gloves, trousers and boots. Preserve reference face, proportions, costume, simplified flat-shaded painted style, palette, outline weight, sword length and every body part. Only change pose. Exactly TWO arms, TWO legs, ONE sword. Character always faces RIGHT, slight 3/4 side view as reference. The screen-RIGHT/front hand (the one holding sword in reference) ALWAYS owns the sword and connects visibly to the same front shoulder. Screen-LEFT/rear hand ALWAYS empty and counterbalances. Never swap hands, never mirror. Red cape remains attached behind shoulders.\nOUTPUT: EXACTLY FOUR separate complete full-body poses in a clean TWO-COLUMN TWO-ROW sprite sheet, reading order top-left,top-right,bottom-left,bottom-right. Canvas landscape 1536x1024 if possible; equal cells 768x512. Genuine TRANSPARENT background and very large empty gutters, no shadows, labels, borders, numbers, motion trails, particles or extra reference character. Each character is same apparent size: head-to-ground about350px, boots planted at local y460, crown around local y110 except small motion bob, hip/body column local x320, full sword stays before localx700. Never autoscale a wider pose to be smaller. Entire silhouette stays inside own cell with generous margins. Need real whole-character redrawn animation poses, coherent anatomy and weight.\nAction: WALKING IN PLACE to the right at a purposeful relaxed pace while carrying sword in the same raised ready guard. Sword hand stays forward and sword mostly upright/diagonal up-right so no weapon/body crossings. Empty hand swings modestly. Near leg (the lighter visible leg) and far leg (slightly darker behind) alternate; keep the same leg ownership and knees bending naturally.\nCell1 is frame02: first contact, near leg extended forward toward right, heel atground, far leg stretched back toward left with toe atground, hips centered. Cell2 is frame05: first passing/up, near leg supports weight just behind hip, far knee passes forward bent and far boot lifted 20px offground. Cell3 is frame08: opposite contact, FAR leg extended forward toward right and atground, NEAR leg trails left with toe just atground, reversing cell1 leg positions without mirroring torso. Cell4 is frame11: second passing/up, FAR leg supports body, NEAR knee passes forward bent and near boot lifted 20px. Boots alternate clear separated leg silhouettes. Preserve height and identity across all four. Small cape lag, not a giant flutter. This is key poses of a cyclic walk, not four still standing poses.",
+    "attack": "Use case: identity-preserve game animation key-pose sheet. Reference image is the EXACT character identity, not loose inspiration. One adult male swordsman, brown swept spiky hair, small cheek scar, simple red scarf-cape to mid thigh, navy tunic, plain brown belt, cream sleeves, a simple silver shoulder plate, brown gloves, trousers and boots. Preserve reference face, proportions, costume, simplified flat-shaded painted style, palette, outline weight, sword length and every body part. Only change pose. Exactly TWO arms, TWO legs, ONE sword. Character always faces RIGHT, slight 3/4 side view as reference. The screen-RIGHT/front hand (the one holding sword in reference) ALWAYS owns the sword and connects visibly to the same front shoulder. Screen-LEFT/rear hand ALWAYS empty and counterbalances. Never swap hands, never mirror. Red cape remains attached behind shoulders.\nOUTPUT: EXACTLY FOUR separate complete full-body poses in a clean TWO-COLUMN TWO-ROW sprite sheet, reading order top-left,top-right,bottom-left,bottom-right. Canvas landscape 1536x1024 if possible; equal cells 768x512. Genuine TRANSPARENT background and very large empty gutters, no shadows, labels, borders, numbers, motion trails, particles or extra reference character. Each character is same apparent size: head-to-ground about350px, boots planted at local y460, crown around local y110 except small motion bob, hip/body column local x320, full sword stays before localx700. Never autoscale a wider pose to be smaller. Entire silhouette stays inside own cell with generous margins. Need real whole-character redrawn animation poses, coherent anatomy and weight.\nAction: a single compact one-handed FORWARD SWORD THRUST and recovery, towards an enemy to the RIGHT. Choose this direct fencing lunge so the weapon ownership stays visible throughout, no hand swapping and no wide overhead crossing. Empty LEFT/rear hand stays clearly empty and counterbalancing near rear hip; sword arm is the RIGHT/front arm throughout.\nCell1 frame02 anticipation: knees flex, torso leans slightly back, sword arm bends with hand pulled back near front ribs, sword blade points diagonally up-right in guarded windup, free fist back. Cell2 frame05 CONTACT: full controlled forward lunge, front foot one step right, rear heel lifted, sword shoulder/elbow/hand fully extends forward/right connected in one chain, blade points HORIZONTALLY RIGHT at chest height. This is maximum reach and clear impact pose; no effects. Cell3 frame08 followthrough: same lunge settled lower, sword still extended right, elbow slightly softened, cape lags to left, no extra slash or second attack. Cell4 frame11 recovery: front foot retracts halfway, torso rises, sword hand draws back near front waist, blade rises diagonally up-right toward original guard. All four poses have same character and weapon scale and stable groundline. Return to reference idle after this frame."
+  }
+}

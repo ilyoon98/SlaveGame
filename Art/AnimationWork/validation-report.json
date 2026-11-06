@@ -1,0 +1,298 @@
+{
+  "status": "passed",
+  "validator": "C:\\Users\\imtl\\.codex\\skills\\2dimg2motion\\scripts\\validate_14frame_pattern.py",
+  "actions": {
+    "walk": {
+      "skillPattern": "passed",
+      "frames": 14,
+      "uniquePoses": 13,
+      "pixelFootBaseline": 100,
+      "pixelBounds": [
+        [
+          45,
+          31,
+          90,
+          100
+        ],
+        [
+          44,
+          29,
+          89,
+          100
+        ],
+        [
+          44,
+          30,
+          90,
+          100
+        ],
+        [
+          45,
+          30,
+          90,
+          100
+        ],
+        [
+          45,
+          29,
+          90,
+          100
+        ],
+        [
+          46,
+          30,
+          90,
+          100
+        ],
+        [
+          44,
+          30,
+          90,
+          100
+        ],
+        [
+          42,
+          29,
+          92,
+          100
+        ],
+        [
+          43,
+          30,
+          90,
+          100
+        ],
+        [
+          43,
+          30,
+          92,
+          100
+        ],
+        [
+          45,
+          29,
+          92,
+          100
+        ],
+        [
+          44,
+          30,
+          90,
+          100
+        ],
+        [
+          45,
+          29,
+          92,
+          100
+        ],
+        [
+          45,
+          31,
+          90,
+          100
+        ]
+      ],
+      "baseline00Equals13": true,
+      "gifPreviews": {
+        "normalized": {
+          "frames": 14,
+          "durationMs": 980,
+          "frameDelaysMs": [
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70
+          ]
+        },
+        "pixel": {
+          "frames": 14,
+          "durationMs": 980,
+          "frameDelaysMs": [
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70,
+            70
+          ]
+        }
+      }
+    },
+    "attack": {
+      "skillPattern": "passed",
+      "frames": 14,
+      "uniquePoses": 13,
+      "pixelFootBaseline": 100,
+      "pixelBounds": [
+        [
+          45,
+          31,
+          90,
+          100
+        ],
+        [
+          35,
+          32,
+          83,
+          100
+        ],
+        [
+          35,
+          33,
+          88,
+          100
+        ],
+        [
+          26,
+          36,
+          107,
+          100
+        ],
+        [
+          28,
+          37,
+          117,
+          100
+        ],
+        [
+          28,
+          38,
+          116,
+          100
+        ],
+        [
+          26,
+          38,
+          116,
+          100
+        ],
+        [
+          25,
+          39,
+          116,
+          100
+        ],
+        [
+          28,
+          37,
+          117,
+          100
+        ],
+        [
+          28,
+          38,
+          108,
+          100
+        ],
+        [
+          34,
+          34,
+          94,
+          100
+        ],
+        [
+          33,
+          31,
+          87,
+          100
+        ],
+        [
+          36,
+          33,
+          89,
+          100
+        ],
+        [
+          45,
+          31,
+          90,
+          100
+        ]
+      ],
+      "baseline00Equals13": true,
+      "gifPreviews": {
+        "normalized": {
+          "frames": 14,
+          "durationMs": 770,
+          "frameDelaysMs": [
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50
+          ]
+        },
+        "pixel": {
+          "frames": 14,
+          "durationMs": 770,
+          "frameDelaysMs": [
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50,
+            60,
+            50
+          ]
+        }
+      }
+    }
+  },
+  "gameAtlas": {
+    "size": [
+      1024,
+      448
+    ],
+    "frameSize": [
+      128,
+      112
+    ],
+    "pivot": {
+      "x": 64,
+      "y": 100
+    },
+    "paletteSize": 24,
+    "frameCount": 29
+  },
+  "artReview": {
+    "silhouette": "Walk and attack contact sheets reviewed at3x pixel scale. Entire character and sword remain within frame bounds.",
+    "weaponOwnership": "The screen-left silver-pauldron arm remains empty; the opposite plain-sleeved arm holds and thrusts the sword.",
+    "registration": "One common0.8 source scale, fixed sheet anchors and complete-pose vertical registration only. No limb synthesis, deformation or per-pose scaling.",
+    "scope": "Live game playback reviewed separately by the integrating agent."
+  }
+}

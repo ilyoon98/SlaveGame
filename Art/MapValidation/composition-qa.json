@@ -1,0 +1,291 @@
+{
+  "schema": "generate2dmap.compose_audit.v1",
+  "status": "pass",
+  "method": "compose_layered_preview placement audit: actor feet by forge_nav rule N9 at the placement positions (with --bundle on the bundle's D2 blocking set in world pixels, else on the canvas, stage ground polygons and solid placement footprints, closed sets), prop feet as points in the walk area, solid footprints rasterised at pixel centres, occlusion from the draw-index owner map at alpha > 16.",
+  "notProven": [
+    "Feet are tested at the placement positions: actors with the forge_nav rules (centre and 8 footprint samples), on the bundle's blocking set with --bundle (D2), else on the canvas, stage ground polygons and solid placement footprints; props as points. Reachability between points is map_nav's job.",
+    "Overlaps are checked only between footprints from prop-pack manifests or placements; placements without a footprint are counted, not checked.",
+    "Occlusion is measured on the flattened preview at alpha > 16; runtime sorting, animation, camera, lighting and scale are not simulated.",
+    "The preview is not proof that the art reads well at gameplay scale; look at it."
+  ],
+  "checks": [
+    {
+      "id": "actor_feet_valid",
+      "status": "pass",
+      "value": {
+        "checked": 5,
+        "invalid": [],
+        "actor_radius_px": 0.0,
+        "y_squash": 1.0,
+        "model": "canvas",
+        "collision": "canvas: runtime-stage.json groundPolygons, solid placement footprints"
+      },
+      "threshold": "forge_nav rule N9: the foot and 8 footprint samples in the walk area and off every blocker (with --bundle the bundle's D2 blocking set, as map_nav.py judges it)"
+    },
+    {
+      "id": "actor_feet_off_placement_footprints",
+      "status": "skipped",
+      "value": {
+        "checked": 0,
+        "actors": []
+      },
+      "threshold": "placement footprints are compose-only (the bundle's blocking set decides validity, D2); an actor standing in one is reported so the prop can be added to the bundle"
+    },
+    {
+      "id": "feet_in_walk_area",
+      "status": "pass",
+      "value": {
+        "checked": 0,
+        "outside": [],
+        "walk_area": "runtime-stage.json groundPolygons"
+      },
+      "threshold": "foot inside a walk area"
+    },
+    {
+      "id": "bounds",
+      "status": "pass",
+      "value": {
+        "off_canvas": [],
+        "clipped": [],
+        "empty": []
+      },
+      "threshold": "visible pixels (alpha > 16) inside the canvas"
+    },
+    {
+      "id": "footprint_overlaps",
+      "status": "skipped",
+      "value": {
+        "pairs": [],
+        "checked": 0,
+        "without_footprint": 0
+      },
+      "threshold": "solid footprints do not overlap"
+    },
+    {
+      "id": "duplicate_placements",
+      "status": "pass",
+      "value": [],
+      "threshold": "no two placements of the same image at the same point"
+    },
+    {
+      "id": "actors_visible",
+      "status": "pass",
+      "value": {
+        "hidden": []
+      },
+      "threshold": "no actor fully covered by later draws"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "desktop-crop/background.png",
+      "sha256": "ae01893f20662565ad5b99e43fd0d6b756c1fe0a8a6da51171de3f303445d77c",
+      "bytes": 1332491
+    },
+    {
+      "path": "placements.json",
+      "sha256": "9b0a5d51502737e1279765fc8eadf22ff605c1a1124c0017747476e1432d22d5",
+      "bytes": 1287
+    },
+    {
+      "path": "../../Assets/Characters/swordsman/frames/idle/idle_00.png",
+      "sha256": "c45775f1657f0e38244fbc53f61ed7f8e7c4febce8c8c84e43ab450b80a82f1b",
+      "bytes": 1236
+    },
+    {
+      "path": "../../Assets/Characters/swordsman/frames/attack/attack_05.png",
+      "sha256": "75efda7d17f6db9f974752db1da742592cd4ba7d46f411cf9683ce40a81b1910",
+      "bytes": 1484
+    },
+    {
+      "path": "../../Assets/Characters/swordsman/frames/walk/walk_05.png",
+      "sha256": "e8a3607c5408a322368693f8ae297085fe8e51c0a82af9b2e86ac113b22f16d3",
+      "bytes": 1362
+    },
+    {
+      "path": "runtime-stage.json",
+      "sha256": "92700e7d3334f2d9fc702690c9c5c4b4f6a48e8d123d1a17e19176118b73b2c1",
+      "bytes": 1093
+    }
+  ],
+  "outputs": [
+    {
+      "path": "actors-preview.png",
+      "sha256": "f1234497295fe97737ed8ac47b882ce956ae694cbfac78b6c30360ced8017669",
+      "bytes": 1332296
+    }
+  ],
+  "tool": {
+    "name": "compose_layered_preview",
+    "version": "0.4.0"
+  },
+  "placements": [
+    {
+      "id": "show",
+      "kind": "actor",
+      "band": "world",
+      "draw_index": 0,
+      "foot": [
+        1060.0,
+        318.6428571428571
+      ],
+      "visible_bounds": [
+        1037,
+        236,
+        1091,
+        319
+      ],
+      "foot_valid": true,
+      "blocked_by": [],
+      "foot_checked": [
+        1059.84,
+        318.72
+      ],
+      "occluded_fraction": 0.0,
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 1060.0,
+        "cy": 318.642857,
+        "rx": 14.4375,
+        "ry": 4.785714,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      }
+    },
+    {
+      "id": "rest",
+      "kind": "actor",
+      "band": "world",
+      "draw_index": 1,
+      "foot": [
+        184.0,
+        429.6428571428571
+      ],
+      "visible_bounds": [
+        161,
+        347,
+        215,
+        430
+      ],
+      "foot_valid": true,
+      "blocked_by": [],
+      "foot_checked": [
+        184.32,
+        430.08
+      ],
+      "occluded_fraction": 0.0,
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 184.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      }
+    },
+    {
+      "id": "education",
+      "kind": "actor",
+      "band": "world",
+      "draw_index": 2,
+      "foot": [
+        492.0,
+        429.6428571428571
+      ],
+      "visible_bounds": [
+        449,
+        355,
+        555,
+        430
+      ],
+      "foot_valid": true,
+      "blocked_by": [],
+      "foot_checked": [
+        491.52,
+        430.08
+      ],
+      "occluded_fraction": 0.0,
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 492.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      }
+    },
+    {
+      "id": "arena",
+      "kind": "actor",
+      "band": "world",
+      "draw_index": 3,
+      "foot": [
+        783.0,
+        429.6428571428571
+      ],
+      "visible_bounds": [
+        740,
+        355,
+        846,
+        430
+      ],
+      "foot_valid": true,
+      "blocked_by": [],
+      "foot_checked": [
+        783.36,
+        430.08
+      ],
+      "occluded_fraction": 0.0,
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 783.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      }
+    },
+    {
+      "id": "market",
+      "kind": "actor",
+      "band": "world",
+      "draw_index": 4,
+      "foot": [
+        1367.0,
+        429.6428571428571
+      ],
+      "visible_bounds": [
+        1345,
+        346,
+        1398,
+        430
+      ],
+      "foot_valid": true,
+      "blocked_by": [],
+      "foot_checked": [
+        1367.04,
+        430.08
+      ],
+      "occluded_fraction": 0.0,
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 1367.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      }
+    }
+  ],
+  "overlaps": [],
+  "walk_area": "runtime-stage.json groundPolygons"
+}

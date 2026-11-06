@@ -1,0 +1,231 @@
+{
+  "status": "static art preview only; no character animation generated",
+  "source": "Art/Source/swordsman-simple-master.png",
+  "process": [
+    "built-in image_gen simplification",
+    "Codixel trim",
+    "Codixel 24-color quantization at 288px subject height",
+    "Codixel mode resize to preserve dominant pixel shapes",
+    "Codixel cleanup",
+    "Codixel comparison sheet"
+  ],
+  "canvas": {
+    "width": 64,
+    "height": 80
+  },
+  "subject": {
+    "width": 49,
+    "height": 72
+  },
+  "alphaLevels": [
+    0,
+    255
+  ],
+  "cleanupPixelsChanged": 0,
+  "colors": [
+    {
+      "col": [
+        111,
+        67,
+        52
+      ],
+      "n": 192,
+      "share": 0.15907207953603977
+    },
+    {
+      "col": [
+        30,
+        19,
+        18
+      ],
+      "n": 165,
+      "share": 0.13670256835128416
+    },
+    {
+      "col": [
+        147,
+        43,
+        45
+      ],
+      "n": 134,
+      "share": 0.11101905550952776
+    },
+    {
+      "col": [
+        58,
+        56,
+        79
+      ],
+      "n": 112,
+      "share": 0.0927920463960232
+    },
+    {
+      "col": [
+        66,
+        44,
+        37
+      ],
+      "n": 110,
+      "share": 0.09113504556752279
+    },
+    {
+      "col": [
+        83,
+        27,
+        28
+      ],
+      "n": 95,
+      "share": 0.07870753935376967
+    },
+    {
+      "col": [
+        105,
+        72,
+        63
+      ],
+      "n": 94,
+      "share": 0.07787903893951947
+    },
+    {
+      "col": [
+        139,
+        129,
+        130
+      ],
+      "n": 61,
+      "share": 0.050538525269262634
+    },
+    {
+      "col": [
+        220,
+        190,
+        166
+      ],
+      "n": 48,
+      "share": 0.03976801988400994
+    },
+    {
+      "col": [
+        35,
+        33,
+        45
+      ],
+      "n": 36,
+      "share": 0.029826014913007456
+    },
+    {
+      "col": [
+        90,
+        57,
+        46
+      ],
+      "n": 29,
+      "share": 0.024026512013256007
+    },
+    {
+      "col": [
+        220,
+        210,
+        211
+      ],
+      "n": 29,
+      "share": 0.024026512013256007
+    },
+    {
+      "col": [
+        239,
+        167,
+        125
+      ],
+      "n": 26,
+      "share": 0.021541010770505385
+    },
+    {
+      "col": [
+        48,
+        29,
+        26
+      ],
+      "n": 25,
+      "share": 0.020712510356255178
+    },
+    {
+      "col": [
+        192,
+        181,
+        182
+      ],
+      "n": 14,
+      "share": 0.0115990057995029
+    },
+    {
+      "col": [
+        133,
+        110,
+        102
+      ],
+      "n": 9,
+      "share": 0.007456503728251864
+    },
+    {
+      "col": [
+        174,
+        157,
+        152
+      ],
+      "n": 8,
+      "share": 0.006628003314001657
+    },
+    {
+      "col": [
+        172,
+        104,
+        75
+      ],
+      "n": 5,
+      "share": 0.004142502071251036
+    },
+    {
+      "col": [
+        205,
+        131,
+        94
+      ],
+      "n": 4,
+      "share": 0.0033140016570008283
+    },
+    {
+      "col": [
+        49,
+        45,
+        56
+      ],
+      "n": 4,
+      "share": 0.0033140016570008283
+    },
+    {
+      "col": [
+        157,
+        127,
+        112
+      ],
+      "n": 4,
+      "share": 0.0033140016570008283
+    },
+    {
+      "col": [
+        107,
+        91,
+        86
+      ],
+      "n": 3,
+      "share": 0.0024855012427506215
+    }
+  ],
+  "silhouetteDiagnostics": {
+    "nubs": 14,
+    "strips": 0,
+    "holes": 9
+  },
+  "note": "Hair tufts, sword tip and armor corners need visual interpretation; numerical edge flags are not automatic failures."
+}

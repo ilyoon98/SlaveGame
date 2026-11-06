@@ -1,0 +1,23 @@
+{
+  "baseline": {"file":"Art/Source/swordsman-animation-baseline.png","anchor":[388,630]},
+  "canonical": {"width":640,"height":560,"pivot":[320,500]},
+  "normalizedOutput":"Art/AnimationWork/normalized",
+  "actions": {
+    "walk": {
+      "duration":70,"loop":true,
+      "sheets":[
+        {"file":"Art/AnimationWork/walk-keyposes.png","columns":2,"rows":2,"indices":[2,5,8,11],"anchor":[320,460],"scale":1},
+        {"file":"Art/AnimationWork/walk-inbetweens-a.png","columns":2,"rows":2,"indices":[1,3,4,6],"anchor":[320,460],"scale":1},
+        {"file":"Art/AnimationWork/walk-inbetweens-b.png","columns":2,"rows":2,"indices":[7,9,10,12],"anchor":[320,460],"scale":1}
+      ]
+    },
+    "attack": {
+      "duration":55,"hitTime":0.28,"loop":false,
+      "sheets":[
+        {"file":"Art/AnimationWork/attack-keyposes.png","columns":2,"rows":2,"indices":[2,5,8,11],"anchor":[320,460],"scale":1},
+        {"file":"Art/AnimationWork/attack-inbetweens-a.png","columns":2,"rows":2,"indices":[1,3,4,6],"anchor":[320,460],"scale":1},
+        {"file":"Art/AnimationWork/attack-inbetweens-b.png","columns":2,"rows":2,"indices":[7,9,10,12],"anchor":[320,460],"scale":1}
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "frameCount": 29,
+  "atlasSize": [
+    1024,
+    448
+  ],
+  "frameSize": [
+    128,
+    112
+  ],
+  "paletteSize": 24,
+  "actions": {
+    "idle": {
+      "frames": 1,
+      "duration": 1000,
+      "loop": true
+    },
+    "walk": {
+      "frames": 14,
+      "duration": 980,
+      "loop": true
+    },
+    "attack": {
+      "frames": 14,
+      "duration": 770,
+      "loop": false,
+      "hitTime": 0.28
+    }
+  },
+  "frameAlphaLevels": [
+    0,
+    255
+  ],
+  "artReview": "Requires contact-sheet and live playback review; counts alone do not prove motion quality."
+}

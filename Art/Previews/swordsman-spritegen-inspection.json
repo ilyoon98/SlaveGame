@@ -1,0 +1,131 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "unknown",
+  "frame_count": 1,
+  "duration_seconds": 1.0,
+  "size": [
+    1086,
+    1448
+  ],
+  "anchor_px": [
+    543.0,
+    1448.0
+  ],
+  "facing": "right",
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": false,
+    "changed_transitions": 0,
+    "silhouette_changed_transitions": 0,
+    "silhouette_change_per_second": 0.0
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 1.0,
+      "bbox": [
+        33,
+        2,
+        1011,
+        1426
+      ],
+      "anchor_px": [
+        543.0,
+        1448.0
+      ],
+      "bbox_from_anchor": [
+        -510.0,
+        -1446.0,
+        468.0,
+        -22.0
+      ],
+      "centroid_px": [
+        477.0254089656727,
+        735.8541093512384
+      ],
+      "opaque_pixels": 492523,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      33,
+      2,
+      1011,
+      1426
+    ],
+    "width_range": [
+      978,
+      978
+    ],
+    "height_range": [
+      1424,
+      1424
+    ],
+    "bottom_range": [
+      1426,
+      1426
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\imtl\\ilyoon_Git\\SlaveGame\\Art\\Source\\swordsman-simple-master.png",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 1,
+    "size": [
+      1086,
+      1448
+    ],
+    "anchor_px": [
+      543.0,
+      1448.0
+    ],
+    "durations_seconds": [
+      1.0
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\imtl\\ilyoon_Git\\SlaveGame\\Art\\Source\\swordsman-simple-master.png": "354dd4a8a987e5ec61c508136c190c8f7a52c9c27982aaca897b59e3b6366723"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\imtl\\ilyoon_Git\\SlaveGame\\Art\\Source\\swordsman-simple-master.png"
+  ],
+  "source": "C:\\Users\\imtl\\ilyoon_Git\\SlaveGame\\Art\\Source\\swordsman-simple-master.png"
+}

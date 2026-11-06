@@ -1,0 +1,20 @@
+{
+  "schema": "generate2dmap.stage.v1",
+  "plate": "desktop-crop/background.png",
+  "sourceSize": [1536, 512],
+  "fit": "contain",
+  "objectPosition": [0.5, 0.5],
+  "reviewedAspectRange": [3, 3],
+  "groundPolygons": [[[0.05, 0.765], [0.95, 0.765], [0.95, 0.9], [0.05, 0.9]], [[0.625, 0.6105], [0.765, 0.6105], [0.765, 0.6405], [0.625, 0.6405]]],
+  "playableBand": [0.6105, 0.9],
+  "slots": {"hero": [[0.12, 0.84], [0.32, 0.84]], "enemy": [[0.51, 0.84], [0.69, 0.6225], [0.89, 0.84]]},
+  "approachPoints": [[0.12, 0.84], [0.32, 0.84], [0.51, 0.84], [0.69, 0.6225], [0.89, 0.84]],
+  "protectedRegions": [
+    {"id": "dorm-training-arena-architecture", "box": [0.01, 0.12, 0.60, 0.7275], "appliesTo": ["walk"]},
+    {"id": "theatre-backdrop", "box": [0.61, 0.12, 0.79, 0.60], "appliesTo": ["walk"]},
+    {"id": "market-architecture", "box": [0.80, 0.12, 0.99, 0.7275], "appliesTo": ["walk"]}
+  ],
+  "effects": [],
+  "bakedContent": {"actors": false, "collectibles": false},
+  "note": "Transformed visual staging data for compositing the representative actor; not collision or navigation data."
+}

@@ -1,0 +1,516 @@
+{
+  "frameCount": 14,
+  "stage": "complete-14-frames",
+  "keyframeIndices": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "anchorIndices": [
+    0,
+    2,
+    5,
+    8,
+    11,
+    13
+  ],
+  "segmentInsertions": [
+    1,
+    2,
+    2,
+    2,
+    1
+  ],
+  "duration": 55,
+  "loop": false,
+  "hitTime": 0.28,
+  "previewBackground": "#FFFFFF",
+  "coordinateSpace": "screen-space",
+  "activeLimb": "screen-right sword arm",
+  "activeShoulder": "original sword-arm shoulder",
+  "anchorLimb": "screen-left empty arm",
+  "weaponHand": "screen-right hand from the baseline",
+  "frames": {
+    "0": {
+      "source": "Art/Source/swordsman-animation-baseline.png",
+      "kind": "exact translated baseline"
+    },
+    "13": {
+      "source": "frame00",
+      "kind": "exact copy"
+    },
+    "2": {
+      "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+      "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+      "cell": 0,
+      "rect": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        187,
+        57,
+        514,
+        474
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        175,
+        161,
+        441,
+        500
+      ],
+      "registrationNote": "Corrected approved sword-hand ownership. Uses the walk source scale. Lower head heights during the thrust are preserved as crouch; poses are never fitted by their bounding boxes."
+    },
+    "5": {
+      "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+      "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+      "cell": 1,
+      "rect": [
+        768,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        138,
+        87,
+        690,
+        472
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -1,
+      "outputBBox": [
+        136,
+        187,
+        582,
+        500
+      ],
+      "registrationNote": "Corrected approved sword-hand ownership. Uses the walk source scale. Lower head heights during the thrust are preserved as crouch; poses are never fitted by their bounding boxes."
+    },
+    "8": {
+      "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+      "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+      "cell": 2,
+      "rect": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        142,
+        82,
+        698,
+        472
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -1,
+      "outputBBox": [
+        139,
+        184,
+        586,
+        500
+      ],
+      "registrationNote": "Corrected approved sword-hand ownership. Uses the walk source scale. Lower head heights during the thrust are preserved as crouch; poses are never fitted by their bounding boxes."
+    },
+    "11": {
+      "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+      "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+      "cell": 3,
+      "rect": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        176,
+        45,
+        510,
+        474
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        166,
+        153,
+        438,
+        500
+      ],
+      "registrationNote": "Corrected approved sword-hand ownership. Uses the walk source scale. Lower head heights during the thrust are preserved as crouch; poses are never fitted by their bounding boxes."
+    },
+    "1": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-a.png",
+      "sha256": "6ff15e12c653613c89b09d2542b2b9508fbbb7f6935093424f11034ff892ad83",
+      "cell": 0,
+      "rect": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        187,
+        56,
+        483,
+        476
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -4,
+      "outputBBox": [
+        175,
+        160,
+        417,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. Forward shoulder/head movement belongs to the lunge and is retained."
+    },
+    "3": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-a.png",
+      "sha256": "6ff15e12c653613c89b09d2542b2b9508fbbb7f6935093424f11034ff892ad83",
+      "cell": 1,
+      "rect": [
+        768,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        129,
+        78,
+        635,
+        475
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -4,
+      "outputBBox": [
+        129,
+        177,
+        538,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. Forward shoulder/head movement belongs to the lunge and is retained."
+    },
+    "4": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-a.png",
+      "sha256": "6ff15e12c653613c89b09d2542b2b9508fbbb7f6935093424f11034ff892ad83",
+      "cell": 2,
+      "rect": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        139,
+        81,
+        699,
+        474
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        137,
+        180,
+        589,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. Forward shoulder/head movement belongs to the lunge and is retained."
+    },
+    "6": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-a.png",
+      "sha256": "6ff15e12c653613c89b09d2542b2b9508fbbb7f6935093424f11034ff892ad83",
+      "cell": 3,
+      "rect": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        127,
+        90,
+        690,
+        472
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        474
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        121
+      ],
+      "groundRegistrationY": -1,
+      "outputBBox": [
+        127,
+        191,
+        582,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. Forward shoulder/head movement belongs to the lunge and is retained."
+    },
+    "7": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-b.png",
+      "sha256": "ad9b08fa37a92d122e3e7e549a2062c91015c95e802ec567b36f4231a5abc13f",
+      "cell": 0,
+      "rect": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        123,
+        85,
+        692,
+        462
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        464
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        129
+      ],
+      "groundRegistrationY": -1,
+      "outputBBox": [
+        124,
+        196,
+        584,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. This sheet has a higher source ground line (approximately464 instead of474), handled by translation. Recovery shifts remain in the generated poses."
+    },
+    "9": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-b.png",
+      "sha256": "ad9b08fa37a92d122e3e7e549a2062c91015c95e802ec567b36f4231a5abc13f",
+      "cell": 1,
+      "rect": [
+        768,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        142,
+        74,
+        642,
+        462
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        464
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        129
+      ],
+      "groundRegistrationY": -1,
+      "outputBBox": [
+        139,
+        185,
+        544,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. This sheet has a higher source ground line (approximately464 instead of474), handled by translation. Recovery shifts remain in the generated poses."
+    },
+    "10": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-b.png",
+      "sha256": "ad9b08fa37a92d122e3e7e549a2062c91015c95e802ec567b36f4231a5abc13f",
+      "cell": 2,
+      "rect": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        181,
+        50,
+        551,
+        463
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        464
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        129
+      ],
+      "groundRegistrationY": -2,
+      "outputBBox": [
+        170,
+        166,
+        471,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. This sheet has a higher source ground line (approximately464 instead of474), handled by translation. Recovery shifts remain in the generated poses."
+    },
+    "12": {
+      "file": "Art/AnimationWork/Sources/attack-inbetweens-b.png",
+      "sha256": "ad9b08fa37a92d122e3e7e549a2062c91015c95e802ec567b36f4231a5abc13f",
+      "cell": 3,
+      "rect": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        194,
+        46,
+        518,
+        464
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        464
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        129
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        181,
+        161,
+        445,
+        500
+      ],
+      "registrationNote": "Same source scale and horizontal anchor as the approved attack keys. This sheet has a higher source ground line (approximately464 instead of474), handled by translation. Recovery shifts remain in the generated poses."
+    }
+  },
+  "bottomRange": [
+    500,
+    500
+  ]
+}

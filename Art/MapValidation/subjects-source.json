@@ -1,0 +1,9 @@
+{
+  "subjects": [
+    {"id": "dormitory", "box": [1, 352, 350, 676]},
+    {"id": "education-yard", "box": [336, 396, 701, 677]},
+    {"id": "arena", "box": [691, 437, 1075, 681]},
+    {"id": "performance-stage", "box": [1055, 334, 1403, 681]},
+    {"id": "trading-post", "box": [1410, 395, 1763, 682]}
+  ]
+}

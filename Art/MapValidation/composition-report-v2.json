@@ -1,0 +1,343 @@
+{
+  "schema": "generate2dmap.compose_report.v2",
+  "tool": {
+    "name": "compose_layered_preview",
+    "version": "0.4.0"
+  },
+  "base": "desktop-crop/background.png",
+  "base_sha256": "ae01893f20662565ad5b99e43fd0d6b756c1fe0a8a6da51171de3f303445d77c",
+  "placements": "placements.json",
+  "placements_sha256": "20e1a3cb8178758c9a542365e6f95990485d748f834624f52d89667101a06133",
+  "output": "actors-preview-v2.png",
+  "output_sha256": "f1234497295fe97737ed8ac47b882ce956ae694cbfac78b6c30360ced8017669",
+  "canvas_size": [
+    1536,
+    512
+  ],
+  "scale": 1.0,
+  "resampler": "nearest",
+  "sort": "ground-line",
+  "anchor_policy": "manifest",
+  "compositing_order": [
+    {
+      "band": "base",
+      "draws": "the base image (scaled by --scale)"
+    },
+    {
+      "band": "background",
+      "draws": "placements on layer background",
+      "sorted_by": [
+        "sortY",
+        "x",
+        "id"
+      ]
+    },
+    {
+      "band": "world",
+      "draws": "props, objects, actors and every other layer",
+      "sorted_by": [
+        "sortY",
+        "x",
+        "id"
+      ]
+    },
+    {
+      "band": "foreground",
+      "draws": "the foreground list and layer foreground",
+      "sorted_by": [
+        "sortY",
+        "x",
+        "id"
+      ]
+    },
+    {
+      "band": "not baked",
+      "draws": "the debug overlay and plate pan are separate files"
+    }
+  ],
+  "prop_packs": [],
+  "pasted": [
+    {
+      "id": "show",
+      "group": "actors",
+      "kind": "actor",
+      "layer": "props",
+      "band": "world",
+      "draw_index": 0,
+      "image": "../../Assets/Characters/swordsman/frames/idle/idle_00.png",
+      "image_sha256": "c45775f1657f0e38244fbc53f61ed7f8e7c4febce8c8c84e43ab450b80a82f1b",
+      "left": 983,
+      "top": 199,
+      "w": 154,
+      "h": 134,
+      "source_size": [
+        128,
+        112
+      ],
+      "anchorPx": [
+        64.0,
+        100.0
+      ],
+      "anchor_source": "px",
+      "anchor_world": [
+        1059.84,
+        318.72
+      ],
+      "anchor_canvas": [
+        1060.0,
+        318.642857
+      ],
+      "anchor_world_error": [
+        0.16,
+        -0.077143
+      ],
+      "resampler": "nearest",
+      "clipped": false,
+      "visible_bounds": [
+        1037,
+        236,
+        1091,
+        319
+      ],
+      "sortY": 318.72,
+      "sort_source": "ground-line",
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 1060.0,
+        "cy": 318.642857,
+        "rx": 14.4375,
+        "ry": 4.785714,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      },
+      "warnings": []
+    },
+    {
+      "id": "rest",
+      "group": "actors",
+      "kind": "actor",
+      "layer": "props",
+      "band": "world",
+      "draw_index": 1,
+      "image": "../../Assets/Characters/swordsman/frames/idle/idle_00.png",
+      "image_sha256": "c45775f1657f0e38244fbc53f61ed7f8e7c4febce8c8c84e43ab450b80a82f1b",
+      "left": 107,
+      "top": 310,
+      "w": 154,
+      "h": 134,
+      "source_size": [
+        128,
+        112
+      ],
+      "anchorPx": [
+        64.0,
+        100.0
+      ],
+      "anchor_source": "px",
+      "anchor_world": [
+        184.32,
+        430.08
+      ],
+      "anchor_canvas": [
+        184.0,
+        429.642857
+      ],
+      "anchor_world_error": [
+        -0.32,
+        -0.437143
+      ],
+      "resampler": "nearest",
+      "clipped": false,
+      "visible_bounds": [
+        161,
+        347,
+        215,
+        430
+      ],
+      "sortY": 430.08,
+      "sort_source": "ground-line",
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 184.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      },
+      "warnings": []
+    },
+    {
+      "id": "education",
+      "group": "actors",
+      "kind": "actor",
+      "layer": "props",
+      "band": "world",
+      "draw_index": 2,
+      "image": "../../Assets/Characters/swordsman/frames/attack/attack_05.png",
+      "image_sha256": "75efda7d17f6db9f974752db1da742592cd4ba7d46f411cf9683ce40a81b1910",
+      "left": 415,
+      "top": 310,
+      "w": 154,
+      "h": 134,
+      "source_size": [
+        128,
+        112
+      ],
+      "anchorPx": [
+        64.0,
+        100.0
+      ],
+      "anchor_source": "px",
+      "anchor_world": [
+        491.52,
+        430.08
+      ],
+      "anchor_canvas": [
+        492.0,
+        429.642857
+      ],
+      "anchor_world_error": [
+        0.48,
+        -0.437143
+      ],
+      "resampler": "nearest",
+      "clipped": false,
+      "visible_bounds": [
+        449,
+        355,
+        555,
+        430
+      ],
+      "sortY": 430.08,
+      "sort_source": "ground-line",
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 492.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      },
+      "warnings": []
+    },
+    {
+      "id": "arena",
+      "group": "actors",
+      "kind": "actor",
+      "layer": "props",
+      "band": "world",
+      "draw_index": 3,
+      "image": "../../Assets/Characters/swordsman/frames/attack/attack_05.png",
+      "image_sha256": "75efda7d17f6db9f974752db1da742592cd4ba7d46f411cf9683ce40a81b1910",
+      "left": 706,
+      "top": 310,
+      "w": 154,
+      "h": 134,
+      "source_size": [
+        128,
+        112
+      ],
+      "anchorPx": [
+        64.0,
+        100.0
+      ],
+      "anchor_source": "px",
+      "anchor_world": [
+        783.36,
+        430.08
+      ],
+      "anchor_canvas": [
+        783.0,
+        429.642857
+      ],
+      "anchor_world_error": [
+        -0.36,
+        -0.437143
+      ],
+      "resampler": "nearest",
+      "clipped": false,
+      "visible_bounds": [
+        740,
+        355,
+        846,
+        430
+      ],
+      "sortY": 430.08,
+      "sort_source": "ground-line",
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 783.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      },
+      "warnings": []
+    },
+    {
+      "id": "market",
+      "group": "actors",
+      "kind": "actor",
+      "layer": "props",
+      "band": "world",
+      "draw_index": 4,
+      "image": "../../Assets/Characters/swordsman/frames/walk/walk_05.png",
+      "image_sha256": "e8a3607c5408a322368693f8ae297085fe8e51c0a82af9b2e86ac113b22f16d3",
+      "left": 1290,
+      "top": 310,
+      "w": 154,
+      "h": 134,
+      "source_size": [
+        128,
+        112
+      ],
+      "anchorPx": [
+        64.0,
+        100.0
+      ],
+      "anchor_source": "px",
+      "anchor_world": [
+        1367.04,
+        430.08
+      ],
+      "anchor_canvas": [
+        1367.0,
+        429.642857
+      ],
+      "anchor_world_error": [
+        -0.04,
+        -0.437143
+      ],
+      "resampler": "nearest",
+      "clipped": false,
+      "visible_bounds": [
+        1345,
+        346,
+        1398,
+        430
+      ],
+      "sortY": 430.08,
+      "sort_source": "ground-line",
+      "footprint": {
+        "shape": "ellipse",
+        "cx": 1367.0,
+        "cy": 429.642857,
+        "rx": 14.4375,
+        "ry": 5.982143,
+        "rotate": 0.0,
+        "source": "placement",
+        "solid": true
+      },
+      "warnings": []
+    }
+  ],
+  "warnings": [],
+  "audit_status": "pass"
+}

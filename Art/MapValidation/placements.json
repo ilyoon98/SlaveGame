@@ -1,0 +1,10 @@
+{
+  "schema": "generate2dmap.placements.v2",
+  "actors": [
+    {"id": "rest", "image": "Assets/Characters/swordsman/frames/idle/idle_00.png", "x": 184.32, "y": 430.08, "anchorPx": [64, 100], "scale": 1.2, "footprint": {"shape": "ellipse", "width": 24, "depth": 10, "basis": "prop_px", "solid": false}},
+    {"id": "education", "image": "Assets/Characters/swordsman/frames/attack/attack_05.png", "x": 491.52, "y": 430.08, "anchorPx": [64, 100], "scale": 1.2, "footprint": {"shape": "ellipse", "width": 24, "depth": 10, "basis": "prop_px", "solid": false}},
+    {"id": "arena", "image": "Assets/Characters/swordsman/frames/attack/attack_05.png", "x": 783.36, "y": 430.08, "anchorPx": [64, 100], "scale": 1.2, "footprint": {"shape": "ellipse", "width": 24, "depth": 10, "basis": "prop_px", "solid": false}},
+    {"id": "show", "image": "Assets/Characters/swordsman/frames/idle/idle_00.png", "x": 1059.84, "y": 318.72, "anchorPx": [64, 100], "scale": 1.2, "footprint": {"shape": "ellipse", "width": 24, "depth": 8, "basis": "prop_px", "solid": false}},
+    {"id": "market", "image": "Assets/Characters/swordsman/frames/walk/walk_05.png", "x": 1367.04, "y": 430.08, "anchorPx": [64, 100], "scale": 1.2, "footprint": {"shape": "ellipse", "width": 24, "depth": 10, "basis": "prop_px", "solid": false}}
+  ]
+}

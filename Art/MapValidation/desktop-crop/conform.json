@@ -1,0 +1,223 @@
+{
+  "schema": "generate2dmap.conform.v1",
+  "tool": {
+    "name": "conform_background",
+    "version": "0.4.0"
+  },
+  "mode": "ground-fit",
+  "source": {
+    "path": "../../../Assets/Environments/goblin-camp.png",
+    "sha256": "06ea76b57137327257a3f6b8e7aa82591f7488ed8742edb83dd7cd80f75e645e",
+    "bytes": 2234707,
+    "size": [
+      1774,
+      887
+    ],
+    "source_mode": "RGB"
+  },
+  "output": {
+    "path": "background.png",
+    "sha256": "ae01893f20662565ad5b99e43fd0d6b756c1fe0a8a6da51171de3f303445d77c",
+    "bytes": 1332491,
+    "size": [
+      1536,
+      512
+    ]
+  },
+  "transform": {
+    "scale": 0.8658399098083427,
+    "src_rect": [
+      0.0,
+      248.36,
+      1774.0,
+      839.6933333333334
+    ],
+    "out_size": [
+      1536,
+      512
+    ],
+    "resampler": "nearest",
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "map": "out = (src - src_rect[0:2]) * scale",
+    "inverse": "src = out / scale + src_rect[0:2]",
+    "zoom_vs_cover": 1.0,
+    "dropped_source_px": {
+      "left": 0.0,
+      "top": 248.36,
+      "right": 0.0,
+      "bottom": 47.306666666666615
+    },
+    "ground": {
+      "source_y": 745.08,
+      "output_y": 430.08
+    }
+  },
+  "subjects": [
+    {
+      "id": "dormitory",
+      "source_box": [
+        1.0,
+        352.0,
+        350.0,
+        676.0
+      ],
+      "output_box": [
+        0.86584,
+        89.735648,
+        303.043968,
+        370.267779
+      ]
+    },
+    {
+      "id": "education-yard",
+      "source_box": [
+        336.0,
+        396.0,
+        701.0,
+        677.0
+      ],
+      "output_box": [
+        290.92221,
+        127.832604,
+        606.953777,
+        371.133619
+      ]
+    },
+    {
+      "id": "arena",
+      "source_box": [
+        691.0,
+        437.0,
+        1075.0,
+        681.0
+      ],
+      "output_box": [
+        598.295378,
+        163.332041,
+        930.777903,
+        374.596979
+      ]
+    },
+    {
+      "id": "performance-stage",
+      "source_box": [
+        1055.0,
+        334.0,
+        1403.0,
+        681.0
+      ],
+      "output_box": [
+        913.461105,
+        74.15053,
+        1214.773393,
+        374.596979
+      ]
+    },
+    {
+      "id": "trading-post",
+      "source_box": [
+        1410.0,
+        395.0,
+        1763.0,
+        682.0
+      ],
+      "output_box": [
+        1220.834273,
+        126.966764,
+        1526.475761,
+        375.462818
+      ]
+    }
+  ],
+  "warnings": [],
+  "qa": {
+    "status": "pass",
+    "method": "conform_background: transform arithmetic (ImageOps.fit crop for cover), subject boxes mapped through it and measured against the output and its cover crops.",
+    "notProven": [
+      "The ground row is the one given; the tool does not find the painted ground in the art.",
+      "Cropping keeps the art's own perspective; a zoomed ground-fit can lose content at the edges (see dropped_source_px).",
+      "Subject and crop checks measure boxes only; look at the output at gameplay scale."
+    ],
+    "checks": [
+      {
+        "id": "subjects in output",
+        "status": "pass",
+        "value": {
+          "subjects": {
+            "dormitory": {
+              "left": 0.86584,
+              "top": 89.735648,
+              "right": 1232.956032,
+              "bottom": 141.732221,
+              "min": 0.86584,
+              "visible_fraction": 1.0
+            },
+            "education-yard": {
+              "left": 290.92221,
+              "top": 127.832604,
+              "right": 929.046223,
+              "bottom": 140.866381,
+              "min": 127.832604,
+              "visible_fraction": 1.0
+            },
+            "arena": {
+              "left": 598.295378,
+              "top": 163.332041,
+              "right": 605.222097,
+              "bottom": 137.403021,
+              "min": 137.403021,
+              "visible_fraction": 1.0
+            },
+            "performance-stage": {
+              "left": 913.461105,
+              "top": 74.15053,
+              "right": 321.226607,
+              "bottom": 137.403021,
+              "min": 74.15053,
+              "visible_fraction": 1.0
+            },
+            "trading-post": {
+              "left": 1220.834273,
+              "top": 126.966764,
+              "right": 9.524239,
+              "bottom": 136.537182,
+              "min": 9.524239,
+              "visible_fraction": 1.0
+            }
+          },
+          "cut": []
+        },
+        "threshold": {
+          "min_margin_px": 0.0
+        }
+      },
+      {
+        "id": "ground row on floor",
+        "status": "pass",
+        "value": 430.08,
+        "threshold": 430.08
+      }
+    ],
+    "inputs": [
+      {
+        "path": "../../../Assets/Environments/goblin-camp.png",
+        "sha256": "06ea76b57137327257a3f6b8e7aa82591f7488ed8742edb83dd7cd80f75e645e",
+        "bytes": 2234707
+      }
+    ],
+    "outputs": [
+      {
+        "path": "background.png",
+        "sha256": "ae01893f20662565ad5b99e43fd0d6b756c1fe0a8a6da51171de3f303445d77c",
+        "bytes": 1332491
+      }
+    ],
+    "tool": {
+      "name": "conform_background",
+      "version": "0.4.0"
+    }
+  }
+}

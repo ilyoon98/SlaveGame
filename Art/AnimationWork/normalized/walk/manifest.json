@@ -1,0 +1,516 @@
+{
+  "frameCount": 14,
+  "stage": "complete-14-frames",
+  "keyframeIndices": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "anchorIndices": [
+    0,
+    2,
+    5,
+    8,
+    11,
+    13
+  ],
+  "segmentInsertions": [
+    1,
+    2,
+    2,
+    2,
+    1
+  ],
+  "duration": 70,
+  "loop": true,
+  "hitTime": null,
+  "previewBackground": "#FFFFFF",
+  "coordinateSpace": "screen-space",
+  "activeLimb": "screen-right sword arm",
+  "activeShoulder": "original sword-arm shoulder",
+  "anchorLimb": "screen-left empty arm",
+  "weaponHand": "screen-right hand from the baseline",
+  "frames": {
+    "0": {
+      "source": "Art/Source/swordsman-animation-baseline.png",
+      "kind": "exact translated baseline"
+    },
+    "13": {
+      "source": "frame00",
+      "kind": "exact copy"
+    },
+    "2": {
+      "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+      "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+      "cell": 0,
+      "rect": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        242,
+        42,
+        524,
+        477
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        476
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        119
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        219,
+        147,
+        449,
+        500
+      ],
+      "registrationNote": "Reference walk sheet. Upright silhouette heights433-436 source pixels; hair centroid x375.8 across four poses."
+    },
+    "5": {
+      "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+      "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+      "cell": 1,
+      "rect": [
+        768,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        252,
+        42,
+        523,
+        477
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        476
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        119
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        227,
+        147,
+        449,
+        500
+      ],
+      "registrationNote": "Reference walk sheet. Upright silhouette heights433-436 source pixels; hair centroid x375.8 across four poses."
+    },
+    "8": {
+      "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+      "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+      "cell": 2,
+      "rect": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        232,
+        43,
+        524,
+        476
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        476
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        119
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        211,
+        148,
+        449,
+        500
+      ],
+      "registrationNote": "Reference walk sheet. Upright silhouette heights433-436 source pixels; hair centroid x375.8 across four poses."
+    },
+    "11": {
+      "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+      "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+      "cell": 3,
+      "rect": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        241,
+        43,
+        524,
+        478
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        365,
+        476
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        28,
+        119
+      ],
+      "groundRegistrationY": -4,
+      "outputBBox": [
+        218,
+        147,
+        449,
+        500
+      ],
+      "registrationNote": "Reference walk sheet. Upright silhouette heights433-436 source pixels; hair centroid x375.8 across four poses."
+    },
+    "1": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-a.png",
+      "sha256": "284d8254cb5bf250ec3c9cff3536a356452ef49caf0b228d69160f98bce21327",
+      "cell": 0,
+      "rect": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        225,
+        38,
+        502,
+        478
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        346,
+        477
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        43,
+        118
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        220,
+        143,
+        447,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is19 source pixels left of the key sheet (mean hair centroid357.0 versus375.8). One shared anchor correction restores the same character position; individual frame x positions remain untouched."
+    },
+    "3": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-a.png",
+      "sha256": "284d8254cb5bf250ec3c9cff3536a356452ef49caf0b228d69160f98bce21327",
+      "cell": 1,
+      "rect": [
+        768,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        227,
+        41,
+        510,
+        477
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        346,
+        477
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        43,
+        118
+      ],
+      "groundRegistrationY": -2,
+      "outputBBox": [
+        222,
+        147,
+        453,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is19 source pixels left of the key sheet (mean hair centroid357.0 versus375.8). One shared anchor correction restores the same character position; individual frame x positions remain untouched."
+    },
+    "4": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-a.png",
+      "sha256": "284d8254cb5bf250ec3c9cff3536a356452ef49caf0b228d69160f98bce21327",
+      "cell": 2,
+      "rect": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        232,
+        41,
+        509,
+        478
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        346,
+        477
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        43,
+        118
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        226,
+        145,
+        452,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is19 source pixels left of the key sheet (mean hair centroid357.0 versus375.8). One shared anchor correction restores the same character position; individual frame x positions remain untouched."
+    },
+    "6": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-a.png",
+      "sha256": "284d8254cb5bf250ec3c9cff3536a356452ef49caf0b228d69160f98bce21327",
+      "cell": 3,
+      "rect": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        225,
+        40,
+        510,
+        477
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        346,
+        477
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        43,
+        118
+      ],
+      "groundRegistrationY": -2,
+      "outputBBox": [
+        221,
+        146,
+        453,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is19 source pixels left of the key sheet (mean hair centroid357.0 versus375.8). One shared anchor correction restores the same character position; individual frame x positions remain untouched."
+    },
+    "7": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-b.png",
+      "sha256": "8bae2a4555abd3d28f796740d907cbe990c7e4496f2665693755e10eb0974c83",
+      "cell": 0,
+      "rect": [
+        0,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        207,
+        40,
+        514,
+        476
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        341,
+        478
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        47,
+        118
+      ],
+      "groundRegistrationY": -2,
+      "outputBBox": [
+        210,
+        146,
+        460,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is24 source pixels left of the key sheet (mean hair centroid351.5 versus375.8). One shared anchor correction; individual frame x positions remain untouched."
+    },
+    "9": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-b.png",
+      "sha256": "8bae2a4555abd3d28f796740d907cbe990c7e4496f2665693755e10eb0974c83",
+      "cell": 1,
+      "rect": [
+        768,
+        0,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        213,
+        44,
+        513,
+        478
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        341,
+        478
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        47,
+        118
+      ],
+      "groundRegistrationY": -3,
+      "outputBBox": [
+        215,
+        148,
+        460,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is24 source pixels left of the key sheet (mean hair centroid351.5 versus375.8). One shared anchor correction; individual frame x positions remain untouched."
+    },
+    "10": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-b.png",
+      "sha256": "8bae2a4555abd3d28f796740d907cbe990c7e4496f2665693755e10eb0974c83",
+      "cell": 2,
+      "rect": [
+        0,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        221,
+        42,
+        512,
+        479
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        341,
+        478
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        47,
+        118
+      ],
+      "groundRegistrationY": -4,
+      "outputBBox": [
+        221,
+        145,
+        459,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is24 source pixels left of the key sheet (mean hair centroid351.5 versus375.8). One shared anchor correction; individual frame x positions remain untouched."
+    },
+    "12": {
+      "file": "Art/AnimationWork/Sources/walk-inbetweens-b.png",
+      "sha256": "8bae2a4555abd3d28f796740d907cbe990c7e4496f2665693755e10eb0974c83",
+      "cell": 3,
+      "rect": [
+        768,
+        512,
+        768,
+        512
+      ],
+      "sourceBBox": [
+        227,
+        43,
+        514,
+        479
+      ],
+      "sharedScale": 0.8,
+      "sourceAnchor": [
+        341,
+        478
+      ],
+      "alphaFloor": 32,
+      "explicitOffset": [
+        0,
+        0
+      ],
+      "origin": [
+        47,
+        118
+      ],
+      "groundRegistrationY": -4,
+      "outputBBox": [
+        226,
+        146,
+        460,
+        500
+      ],
+      "registrationNote": "Whole-sheet layout is24 source pixels left of the key sheet (mean hair centroid351.5 versus375.8). One shared anchor correction; individual frame x positions remain untouched."
+    }
+  },
+  "bottomRange": [
+    500,
+    500
+  ]
+}

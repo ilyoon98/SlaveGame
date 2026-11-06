@@ -1,0 +1,429 @@
+{
+  "kind": "generated-animation-normalization",
+  "sourceManifest": "Art/AnimationWork/sources-keyposes.json",
+  "canonical": {
+    "width": 640,
+    "height": 560,
+    "pivot": [
+      320,
+      500
+    ]
+  },
+  "baseline": {
+    "file": "Art/Source/swordsman-animation-baseline.png",
+    "anchor": [
+      388,
+      630
+    ],
+    "scale": 1,
+    "bbox": [
+      224,
+      154,
+      449,
+      500
+    ]
+  },
+  "actions": {
+    "walk": {
+      "frameCount": 6,
+      "stage": "keyposes-only",
+      "keyframeIndices": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "anchorIndices": [
+        0,
+        2,
+        5,
+        8,
+        11,
+        13
+      ],
+      "segmentInsertions": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "duration": 70,
+      "loop": true,
+      "hitTime": null,
+      "previewBackground": "#FFFFFF",
+      "coordinateSpace": "screen-space",
+      "activeLimb": "screen-right sword arm",
+      "activeShoulder": "original sword-arm shoulder",
+      "anchorLimb": "screen-left empty arm",
+      "weaponHand": "screen-right hand from the baseline",
+      "frames": {
+        "0": {
+          "source": "Art/Source/swordsman-animation-baseline.png",
+          "kind": "exact translated baseline"
+        },
+        "13": {
+          "source": "frame00",
+          "kind": "exact copy"
+        },
+        "2": {
+          "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+          "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+          "cell": 0,
+          "rect": [
+            0,
+            0,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            242,
+            42,
+            524,
+            477
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            476
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            119
+          ],
+          "groundRegistrationY": -3,
+          "outputBBox": [
+            219,
+            147,
+            449,
+            500
+          ]
+        },
+        "5": {
+          "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+          "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+          "cell": 1,
+          "rect": [
+            768,
+            0,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            252,
+            42,
+            523,
+            477
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            476
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            119
+          ],
+          "groundRegistrationY": -3,
+          "outputBBox": [
+            227,
+            147,
+            449,
+            500
+          ]
+        },
+        "8": {
+          "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+          "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+          "cell": 2,
+          "rect": [
+            0,
+            512,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            232,
+            43,
+            524,
+            476
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            476
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            119
+          ],
+          "groundRegistrationY": -3,
+          "outputBBox": [
+            211,
+            148,
+            449,
+            500
+          ]
+        },
+        "11": {
+          "file": "Art/AnimationWork/Sources/draft-walk-keyposes.png",
+          "sha256": "1ee51def4c268c59fb0420eeb4bd25dacafb655bfff7fde9721e6d8e77e9ea2d",
+          "cell": 3,
+          "rect": [
+            768,
+            512,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            241,
+            43,
+            524,
+            478
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            476
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            119
+          ],
+          "groundRegistrationY": -4,
+          "outputBBox": [
+            218,
+            147,
+            449,
+            500
+          ]
+        }
+      },
+      "bottomRange": [
+        500,
+        500
+      ]
+    },
+    "attack": {
+      "frameCount": 6,
+      "stage": "keyposes-only",
+      "keyframeIndices": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "anchorIndices": [
+        0,
+        2,
+        5,
+        8,
+        11,
+        13
+      ],
+      "segmentInsertions": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "duration": 55,
+      "loop": false,
+      "hitTime": 0.28,
+      "previewBackground": "#FFFFFF",
+      "coordinateSpace": "screen-space",
+      "activeLimb": "screen-right sword arm",
+      "activeShoulder": "original sword-arm shoulder",
+      "anchorLimb": "screen-left empty arm",
+      "weaponHand": "screen-right hand from the baseline",
+      "frames": {
+        "0": {
+          "source": "Art/Source/swordsman-animation-baseline.png",
+          "kind": "exact translated baseline"
+        },
+        "13": {
+          "source": "frame00",
+          "kind": "exact copy"
+        },
+        "2": {
+          "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+          "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+          "cell": 0,
+          "rect": [
+            0,
+            0,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            187,
+            57,
+            514,
+            474
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            474
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            121
+          ],
+          "groundRegistrationY": -3,
+          "outputBBox": [
+            175,
+            161,
+            441,
+            500
+          ]
+        },
+        "5": {
+          "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+          "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+          "cell": 1,
+          "rect": [
+            768,
+            0,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            138,
+            87,
+            690,
+            472
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            474
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            121
+          ],
+          "groundRegistrationY": -1,
+          "outputBBox": [
+            136,
+            187,
+            582,
+            500
+          ]
+        },
+        "8": {
+          "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+          "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+          "cell": 2,
+          "rect": [
+            0,
+            512,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            142,
+            82,
+            698,
+            472
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            474
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            121
+          ],
+          "groundRegistrationY": -1,
+          "outputBBox": [
+            139,
+            184,
+            586,
+            500
+          ]
+        },
+        "11": {
+          "file": "Art/AnimationWork/Sources/attack-keyposes.png",
+          "sha256": "1f443890da7e3166dfb1aae2109c5e0baf11add800b09e55a850257299a9525e",
+          "cell": 3,
+          "rect": [
+            768,
+            512,
+            768,
+            512
+          ],
+          "sourceBBox": [
+            176,
+            45,
+            510,
+            474
+          ],
+          "sharedScale": 0.8,
+          "sourceAnchor": [
+            365,
+            474
+          ],
+          "alphaFloor": 32,
+          "explicitOffset": [
+            0,
+            0
+          ],
+          "origin": [
+            28,
+            121
+          ],
+          "groundRegistrationY": -3,
+          "outputBBox": [
+            166,
+            153,
+            438,
+            500
+          ]
+        }
+      },
+      "bottomRange": [
+        500,
+        500
+      ]
+    }
+  },
+  "artworkMethod": "Whole-character image_gen frames; local split, registration and packing only."
+}

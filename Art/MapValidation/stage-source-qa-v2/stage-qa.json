@@ -1,0 +1,427 @@
+{
+  "schema": "generate2dmap.stage_qa.v1",
+  "status": "needs-visual-review",
+  "method": "validate_stage: stage.v1 structure and cross-field rules; even-odd point-in-polygon tests of each slot and approach point plus 8 footprint-ellipse samples against ground polygons, walk-protected regions and ripple polygons; pixel-centre rasters for effect overlaps; a greedy grid-search layout solver per aspect (cover/contain projection, UI panels, scale ladder, foot-y draw order).",
+  "notProven": [
+    "Geometry is checked against the stage's own polygons; the tool does not see whether the painted plate really has dry, open ground there. Look at stage-overlay.png and the layout renders.",
+    "Actor boxes are rectangles of the given height, aspect and foot anchor, not real silhouettes; the UI panels are the chosen profile, not the game's own HUD unless --ui gives it.",
+    "Layouts are solved at reference viewports (720 px high, 390 px wide in portrait) with the stage's fit and objectPosition; other projections, safe-area insets and depth-dependent actor scale are not modelled.",
+    "A solved layout is one valid answer from a greedy search; the game's own layout code must still place actors on ground (run it, or compare with the solved feet)."
+  ],
+  "checks": [
+    {
+      "id": "ground polygons are simple",
+      "status": "pass",
+      "value": null,
+      "threshold": null
+    },
+    {
+      "id": "slots stand on ground",
+      "status": "pass",
+      "value": null,
+      "threshold": {
+        "footRadius": 0.009,
+        "ySquash": 0.3
+      }
+    },
+    {
+      "id": "slots avoid walk-protected regions",
+      "status": "pass",
+      "value": null,
+      "threshold": {
+        "footRadius": 0.009,
+        "ySquash": 0.3
+      }
+    },
+    {
+      "id": "slots stay off water",
+      "status": "pass",
+      "value": null,
+      "threshold": {
+        "footRadius": 0.009,
+        "ySquash": 0.3
+      }
+    },
+    {
+      "id": "slots inside playableBand",
+      "status": "pass",
+      "value": null,
+      "threshold": [
+        0.687,
+        0.88
+      ]
+    },
+    {
+      "id": "approach points are standable",
+      "status": "pass",
+      "value": null,
+      "threshold": {
+        "footRadius": 0.009,
+        "ySquash": 0.3
+      }
+    },
+    {
+      "id": "slot footprints do not overlap",
+      "status": "pass",
+      "value": null,
+      "threshold": {
+        "footprintPx": [
+          31.932,
+          9.5796
+        ]
+      }
+    },
+    {
+      "id": "effects avoid motion-protected regions",
+      "status": "pass",
+      "value": null,
+      "threshold": null
+    },
+    {
+      "id": "water stays off ground polygons",
+      "status": "pass",
+      "value": null,
+      "threshold": "split the ground polygon around the water: a runtime that tests only groundPolygons would let actors stand in it (validate_stage also tests ripple polygons)"
+    },
+    {
+      "id": "bakedContent declared",
+      "status": "pass",
+      "value": {
+        "painted": []
+      },
+      "threshold": null
+    },
+    {
+      "id": "plate matches sourceSize",
+      "status": "pass",
+      "value": [
+        1774,
+        887
+      ],
+      "threshold": [
+        1774,
+        887
+      ]
+    },
+    {
+      "id": "layout 3:1 party-vs-enemies",
+      "status": "pass",
+      "value": {
+        "aspect": "3:1",
+        "ratio": 3.0,
+        "formation": "party-vs-enemies",
+        "viewport": [
+          2160,
+          720
+        ],
+        "inReviewedRange": true,
+        "placed": 5,
+        "unplaced": [],
+        "minScale": 1.0,
+        "drawOrder": [
+          "E2",
+          "H1",
+          "H2",
+          "E1",
+          "E3"
+        ],
+        "errors": []
+      },
+      "threshold": {
+        "reviewedAspectRange": [
+          3.0,
+          3.0
+        ],
+        "warnBelowScale": 0.7
+      }
+    },
+    {
+      "id": "layout solves at both ends of reviewedAspectRange",
+      "status": "pass",
+      "value": [
+        {
+          "ratio": 3.0,
+          "formation": "party-vs-enemies",
+          "viewport": [
+            2160,
+            720
+          ],
+          "unplaced": []
+        }
+      ],
+      "threshold": [
+        3.0,
+        3.0
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "path": "../../../Assets/Environments/camp-stage.json",
+      "sha256": "987d1feefcb1cdfc4095e9e16c86bae4722279cf1a6a891135f50d45355b7922",
+      "bytes": 3544
+    },
+    {
+      "path": "../../../Assets/Environments/goblin-camp.png",
+      "sha256": "06ea76b57137327257a3f6b8e7aa82591f7488ed8742edb83dd7cd80f75e645e",
+      "bytes": 2234707
+    }
+  ],
+  "outputs": [
+    {
+      "path": "stage-overlay.png",
+      "sha256": "e6bd63184dbe63bc79bdfa09b1cb41b43b066feaa8b05f41ac57d1f20fe59355",
+      "bytes": 2389483
+    },
+    {
+      "path": "layout-3x1.png",
+      "sha256": "0b03244941535e57d1a80a7998c6e469b428bcf132783ad2ffd7dc8e556f8a58",
+      "bytes": 2230234
+    }
+  ],
+  "tool": {
+    "name": "validate_stage",
+    "version": "0.4.0"
+  },
+  "stage": {
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "fit": "cover",
+    "reviewedAspectRange": [
+      3.0,
+      3.0
+    ],
+    "objectPosition": [
+      0.5,
+      0.84
+    ],
+    "slots": 5
+  },
+  "settings": {
+    "footRadius": 0.009,
+    "ySquash": 0.3,
+    "minScale": 1.0,
+    "actors": {
+      "hero": {
+        "height": 0.175,
+        "aspect": 1.142857,
+        "anchor": [
+          0.5,
+          0.96
+        ]
+      },
+      "enemy": {
+        "height": 0.175,
+        "aspect": 1.142857,
+        "anchor": [
+          0.5,
+          0.96
+        ]
+      },
+      "boss": {
+        "height": 0.4,
+        "aspect": 1.142857,
+        "anchor": [
+          0.5,
+          0.96
+        ]
+      }
+    },
+    "ui": "none",
+    "minActorPx": 38
+  },
+  "layouts": [
+    {
+      "aspect": "3:1",
+      "ratio": 3.0,
+      "formation": "party-vs-enemies",
+      "render": "layout-3x1.png",
+      "viewport": [
+        2160,
+        720
+      ],
+      "fit": "cover",
+      "scale": 1.218,
+      "offset": [
+        0.0,
+        -302.4
+      ],
+      "visibleUv": [
+        0.0,
+        0.28,
+        1.0,
+        0.947
+      ],
+      "ui": [],
+      "actors": [
+        {
+          "id": "H1",
+          "role": "hero",
+          "slot": [
+            0.12,
+            0.84
+          ],
+          "desired": [
+            259.2,
+            604.8
+          ],
+          "foot": [
+            259.2,
+            604.8
+          ],
+          "footUv": [
+            0.12,
+            0.84
+          ],
+          "box": [
+            151.2,
+            423.36,
+            367.2,
+            612.36
+          ],
+          "sizePx": 189.0,
+          "scale": 1.0,
+          "placed": true,
+          "grounded": true,
+          "movedPx": 0.0
+        },
+        {
+          "id": "H2",
+          "role": "hero",
+          "slot": [
+            0.32,
+            0.84
+          ],
+          "desired": [
+            691.2,
+            604.8
+          ],
+          "foot": [
+            691.2,
+            604.8
+          ],
+          "footUv": [
+            0.32,
+            0.84
+          ],
+          "box": [
+            583.2,
+            423.36,
+            799.2,
+            612.36
+          ],
+          "sizePx": 189.0,
+          "scale": 1.0,
+          "placed": true,
+          "grounded": true,
+          "movedPx": 0.0
+        },
+        {
+          "id": "E1",
+          "role": "enemy",
+          "slot": [
+            0.51,
+            0.84
+          ],
+          "desired": [
+            1101.6,
+            604.8
+          ],
+          "foot": [
+            1101.6,
+            604.8
+          ],
+          "footUv": [
+            0.51,
+            0.84
+          ],
+          "box": [
+            993.6,
+            423.36,
+            1209.6,
+            612.36
+          ],
+          "sizePx": 189.0,
+          "scale": 1.0,
+          "placed": true,
+          "grounded": true,
+          "movedPx": 0.0
+        },
+        {
+          "id": "E2",
+          "role": "enemy",
+          "slot": [
+            0.69,
+            0.695
+          ],
+          "desired": [
+            1490.4,
+            448.2
+          ],
+          "foot": [
+            1490.4,
+            448.2
+          ],
+          "footUv": [
+            0.69,
+            0.695
+          ],
+          "box": [
+            1382.4,
+            266.76,
+            1598.4,
+            455.76
+          ],
+          "sizePx": 189.0,
+          "scale": 1.0,
+          "placed": true,
+          "grounded": true,
+          "movedPx": 0.0
+        },
+        {
+          "id": "E3",
+          "role": "enemy",
+          "slot": [
+            0.89,
+            0.84
+          ],
+          "desired": [
+            1922.4,
+            604.8
+          ],
+          "foot": [
+            1922.4,
+            604.8
+          ],
+          "footUv": [
+            0.89,
+            0.84
+          ],
+          "box": [
+            1814.4,
+            423.36,
+            2030.4,
+            612.36
+          ],
+          "sizePx": 189.0,
+          "scale": 1.0,
+          "placed": true,
+          "grounded": true,
+          "movedPx": 0.0
+        }
+      ],
+      "drawOrder": [
+        "E2",
+        "H1",
+        "H2",
+        "E1",
+        "E3"
+      ],
+      "overlaps": [],
+      "errors": []
+    }
+  ],
+  "warnings": []
+}

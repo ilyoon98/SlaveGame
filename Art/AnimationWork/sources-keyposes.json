@@ -1,0 +1,14 @@
+{
+  "allowKeyposesOnly":true,
+  "baseline":{"file":"Art/Source/swordsman-animation-baseline.png","anchor":[388,630]},
+  "canonical":{"width":640,"height":560,"pivot":[320,500]},
+  "normalizedOutput":"Art/AnimationWork/normalized-keyposes",
+  "actions":{
+    "walk":{"duration":70,"loop":true,"sheets":[
+      {"file":"Art/AnimationWork/Sources/draft-walk-keyposes.png","columns":2,"rows":2,"indices":[2,5,8,11],"anchor":[365,476],"scale":0.8,"alphaFloor":32,"registerGround":true}
+    ]},
+    "attack":{"duration":55,"loop":false,"hitTime":0.28,"sheets":[
+      {"file":"Art/AnimationWork/Sources/attack-keyposes.png","columns":2,"rows":2,"indices":[2,5,8,11],"anchor":[365,474],"scale":0.8,"alphaFloor":32,"registerGround":true}
+    ]}
+  }
+}

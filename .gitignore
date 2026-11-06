@@ -1,0 +1,22 @@
+# Local tool dependencies and downloaded third-party repositories.
+Tools/.venv/
+Tools/vendor/
+__pycache__/
+*.pyc
+
+# Generated inspection output is retained locally; curated sources stay visible.
+Assets/Effects/_validation/
+
+# Runtime dependencies, local logs and machine credentials.
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+Thumbs.db
+.DS_Store
+
+# Capability checks contain local machine paths; the summarized QA is in Docs.
+Art/MapValidation/doctor*.json

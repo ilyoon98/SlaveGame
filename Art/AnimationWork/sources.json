@@ -1,0 +1,18 @@
+{
+  "baseline":{"file":"Art/Source/swordsman-animation-baseline.png","anchor":[388,630]},
+  "canonical":{"width":640,"height":560,"pivot":[320,500]},
+  "normalizedOutput":"Art/AnimationWork/normalized",
+  "registrationPolicy":"Original baseline is translated without resizing. Every generated sheet uses a uniform 0.8 scale: approximately 433 source pixels of upright body height become 346 pixels, matching the baseline. Each sheet has one horizontal anchor. Ground registration translates each complete pose vertically to y500; it never changes pose proportions or body scale. Alpha below32 removes diffuse generated background haze. Final pixel frames use one shared24-color palette and a uniform fivefold reduction.",
+  "actions":{
+    "walk":{"duration":70,"loop":true,"sheets":[
+      {"file":"Art/AnimationWork/Sources/draft-walk-keyposes.png","columns":2,"rows":2,"indices":[2,5,8,11],"anchor":[365,476],"scale":0.8,"alphaFloor":32,"registerGround":true,"registrationNote":"Reference walk sheet. Upright silhouette heights433-436 source pixels; hair centroid x375.8 across four poses."},
+      {"file":"Art/AnimationWork/Sources/walk-inbetweens-a.png","columns":2,"rows":2,"indices":[1,3,4,6],"anchor":[346,477],"scale":0.8,"alphaFloor":32,"registerGround":true,"registrationNote":"Whole-sheet layout is19 source pixels left of the key sheet (mean hair centroid357.0 versus375.8). One shared anchor correction restores the same character position; individual frame x positions remain untouched."},
+      {"file":"Art/AnimationWork/Sources/walk-inbetweens-b.png","columns":2,"rows":2,"indices":[7,9,10,12],"anchor":[341,478],"scale":0.8,"alphaFloor":32,"registerGround":true,"registrationNote":"Whole-sheet layout is24 source pixels left of the key sheet (mean hair centroid351.5 versus375.8). One shared anchor correction; individual frame x positions remain untouched."}
+    ]},
+    "attack":{"duration":55,"loop":false,"hitTime":0.28,"sheets":[
+      {"file":"Art/AnimationWork/Sources/attack-keyposes.png","columns":2,"rows":2,"indices":[2,5,8,11],"anchor":[365,474],"scale":0.8,"alphaFloor":32,"registerGround":true,"registrationNote":"Corrected approved sword-hand ownership. Uses the walk source scale. Lower head heights during the thrust are preserved as crouch; poses are never fitted by their bounding boxes."},
+      {"file":"Art/AnimationWork/Sources/attack-inbetweens-a.png","columns":2,"rows":2,"indices":[1,3,4,6],"anchor":[365,474],"scale":0.8,"alphaFloor":32,"registerGround":true,"registrationNote":"Same source scale and horizontal anchor as the approved attack keys. Forward shoulder/head movement belongs to the lunge and is retained."},
+      {"file":"Art/AnimationWork/Sources/attack-inbetweens-b.png","columns":2,"rows":2,"indices":[7,9,10,12],"anchor":[365,464],"scale":0.8,"alphaFloor":32,"registerGround":true,"registrationNote":"Same source scale and horizontal anchor as the approved attack keys. This sheet has a higher source ground line (approximately464 instead of474), handled by translation. Recovery shifts remain in the generated poses."}
+    ]}
+  }
+}
