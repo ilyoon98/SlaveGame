@@ -46,7 +46,7 @@ PowerShell 런처는 `.\Prototype\Start-Prototype.ps1`이다. 스크립트 실�
 - [현재 게임 콘셉트](Docs/GameConcept.md)
 - [육성 규칙과 이후 확장 범위](Docs/RaisingManagement.md)
 - [거점 화면 디자인](VISUAL_DESIGN.md)
-- [아트 방향](Docs/ArtDirection.md)
+- [아트 방향](Docs/ArtDirection.md) · [캐릭터 바이블](Docs/CharacterBible.md) (등신·팔레트·애니메이션 규격, [기준 시트](Art/Bible/character-template-sheet.png)) · [루카 새 도트 프레임](Art/Previews/luka-frames.png)
 - [고블린 거점 배경](Assets/Environments/goblin-camp.png) · [생성 프롬프트·출처](Art/Source/goblin-camp.prompt.md)
 - [거점 육성 프로토타입 검증](Docs/ManagementValidation.md) · [이전 원정 버전 검증](Docs/PrototypeValidation.md)
 - [배경 전용 generate2dmap 검증](Docs/MapValidation.md) · [장면 데이터](Assets/Environments/camp-stage.json)

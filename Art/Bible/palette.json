@@ -1,0 +1,44 @@
+{
+  "name": "mossfang-character-master",
+  "note": "Master character palette. Keys are single characters so Pixelbolt grids can use them. Every ramp goes dark -> base -> light. One character uses at most 16 of these colors including outline.",
+  "palette": {
+    "o": "#1e2328",
+    "w": "#f2ead6",
+    "a": "#8a5a44", "b": "#c98e6b", "c": "#ecb994",
+    "d": "#6b4532", "e": "#a46f4f", "f": "#cf9a72",
+    "g": "#3d5a3a", "h": "#6b8a4f", "i": "#9db46e",
+    "j": "#3b2a22", "k": "#6b4632", "l": "#94664a",
+    "m": "#23273a", "n": "#363c55", "p": "#565e7c",
+    "q": "#8a6a34", "r": "#c9a65d", "s": "#e6cf8a",
+    "t": "#6e2f2a", "u": "#a96854", "v": "#d08b6c",
+    "x": "#6e6450", "y": "#9c8f6e", "z": "#c9bb92",
+    "A": "#26324a", "B": "#344760", "C": "#52688a",
+    "D": "#6e2b28", "E": "#b64e45", "F": "#d9786a",
+    "G": "#45395f", "H": "#6f5f9a", "I": "#a291cf",
+    "J": "#3e2c22", "K": "#6b4a33", "L": "#8f6a48",
+    "M": "#5b6670", "N": "#9aa6ae", "O": "#dfe6ea"
+  },
+  "ramps": [
+    ["a", "b", "c"], ["d", "e", "f"], ["g", "h", "i"],
+    ["j", "k", "l"], ["m", "n", "p"], ["q", "r", "s"], ["t", "u", "v"],
+    ["x", "y", "z"], ["A", "B", "C"], ["D", "E", "F"], ["G", "H", "I"],
+    ["J", "K", "L"], ["M", "N", "O"]
+  ],
+  "roles": {
+    "o": "outline (never pure black)",
+    "w": "eye white / tiny specular only",
+    "a-c": "human skin, light",
+    "d-f": "human skin, tan",
+    "g-i": "goblin skin (moss)",
+    "j-l": "hair brown",
+    "m-p": "hair black",
+    "q-s": "hair blond; r doubles as UI brass (reward)",
+    "t-v": "hair red; u doubles as UI muted rose (warning)",
+    "x-z": "tier 0 rag / linen",
+    "A-C": "tier 1 training (navy)",
+    "D-F": "tier 2 arena (rust red)",
+    "G-I": "tier 2 stage (purple)",
+    "J-L": "leather: belts, boots, goblin gear",
+    "M-O": "metal: armor, weapons"
+  }
+}

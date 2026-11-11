@@ -1,0 +1,148 @@
+{
+  "image": "atlas.png",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "pivot": {
+    "x": 32,
+    "y": 60
+  },
+  "facing": "right",
+  "scale": 2,
+  "animations": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 64,
+          "h": 64,
+          "duration": 200
+        },
+        {
+          "x": 64,
+          "y": 0,
+          "w": 64,
+          "h": 64,
+          "duration": 200
+        },
+        {
+          "x": 128,
+          "y": 0,
+          "w": 64,
+          "h": 64,
+          "duration": 200
+        },
+        {
+          "x": 192,
+          "y": 0,
+          "w": 64,
+          "h": 64,
+          "duration": 200
+        }
+      ],
+      "duration": 800
+    },
+    "walk": {
+      "loop": true,
+      "frames": [
+        {
+          "x": 0,
+          "y": 64,
+          "w": 64,
+          "h": 64,
+          "duration": 110
+        },
+        {
+          "x": 64,
+          "y": 64,
+          "w": 64,
+          "h": 64,
+          "duration": 110
+        },
+        {
+          "x": 128,
+          "y": 64,
+          "w": 64,
+          "h": 64,
+          "duration": 110
+        },
+        {
+          "x": 192,
+          "y": 64,
+          "w": 64,
+          "h": 64,
+          "duration": 110
+        },
+        {
+          "x": 256,
+          "y": 64,
+          "w": 64,
+          "h": 64,
+          "duration": 110
+        },
+        {
+          "x": 320,
+          "y": 64,
+          "w": 64,
+          "h": 64,
+          "duration": 110
+        }
+      ],
+      "duration": 660
+    },
+    "attack": {
+      "loop": false,
+      "frames": [
+        {
+          "x": 0,
+          "y": 128,
+          "w": 64,
+          "h": 64,
+          "duration": 80
+        },
+        {
+          "x": 64,
+          "y": 128,
+          "w": 64,
+          "h": 64,
+          "duration": 80
+        },
+        {
+          "x": 128,
+          "y": 128,
+          "w": 64,
+          "h": 64,
+          "duration": 60
+        },
+        {
+          "x": 192,
+          "y": 128,
+          "w": 64,
+          "h": 64,
+          "duration": 140
+        },
+        {
+          "x": 256,
+          "y": 128,
+          "w": 64,
+          "h": 64,
+          "duration": 100
+        },
+        {
+          "x": 320,
+          "y": 128,
+          "w": 64,
+          "h": 64,
+          "duration": 100
+        }
+      ],
+      "duration": 560
+    }
+  },
+  "provenance": {
+    "bible": "Docs/CharacterBible.md",
+    "builder": "Tools/build-luka-sprite.mjs",
+    "drawnBy": "procedural pixel construction, no image model"
+  }
+}
