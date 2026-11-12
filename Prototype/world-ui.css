@@ -1,0 +1,125 @@
+:root {
+  --ink: #161e19;
+  --wood: #332b20;
+  --edge: #a78956;
+  --paper: #f3e2b8;
+  --safe-top: max(16px, env(safe-area-inset-top));
+  --safe-right: max(16px, env(safe-area-inset-right));
+  --safe-bottom: max(16px, env(safe-area-inset-bottom));
+  --safe-left: max(16px, env(safe-area-inset-left));
+  --step: polygon(4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px), 0 4px, 4px 4px);
+}
+body { overflow: hidden; background: var(--ink); }
+.game-screen { position: relative; height: 100dvh; isolation: isolate; }
+.camera {
+  position: absolute;
+  inset: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.camera::-webkit-scrollbar { display: none; }
+.world { position: relative; height: 100%; width: max(100%, 200dvh); }
+.world > canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+.world-signs { position: absolute; inset: 0; pointer-events: none; }
+.world-signs button, .hud-button, .resources .gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 4px 9px;
+  border: 2px solid var(--edge);
+  border-radius: 0;
+  color: var(--paper);
+  background: var(--wood);
+  box-shadow: inset 0 -3px #191710, inset 0 2px #ffffff20;
+  clip-path: var(--step);
+  white-space: nowrap;
+}
+.world-signs button {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+  min-height: 36px;
+  pointer-events: auto;
+  font-size: 12px;
+  font-weight: 700;
+}
+.world-signs button:hover, .hud-button:hover:not(:disabled),
+.world-signs button[aria-expanded="true"] { background: #57452c; border-color: #f0ce83; }
+.world-signs button:focus-visible, .hud-button:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #fff1aa;
+}
+.pixel-icon {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+.hud {
+  position: absolute;
+  inset: var(--safe-top) var(--safe-right) auto var(--safe-left);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  pointer-events: none;
+}
+.hud .resources, .hud .playback-controls, .camera-controls { display: flex; gap: 6px; }
+.hud-button { min-width: 40px; }
+.hud button, .hud .gold { pointer-events: auto; }
+.resources .gold { color: #ffda80; }
+.resources .gold strong { font: 700 16px monospace; }
+.camera-controls { position: absolute; inset: auto var(--safe-right) var(--safe-bottom) auto; }
+.camera-controls button { min-height: 44px; min-width: 44px; }
+.pixel-panel {
+  position: fixed;
+  inset: auto var(--safe-right) calc(var(--safe-bottom) + 53px) auto;
+  margin: 0;
+  width: min(350px, calc(100vw - var(--safe-left) - var(--safe-right)));
+  max-height: calc(100dvh - var(--safe-top) - var(--safe-bottom) - 112px);
+  overflow: auto;
+  padding: 14px;
+  border: 3px solid var(--edge);
+  border-radius: 0;
+  background: #222a21;
+  color: var(--paper);
+  box-shadow: inset 0 0 0 2px #141b15;
+  clip-path: var(--step);
+}
+.pixel-panel.camp-menu {
+  inset: calc(var(--safe-top) + 50px) var(--safe-right) auto auto;
+  max-height: calc(100dvh - var(--safe-top) - var(--safe-bottom) - 55px);
+}
+.panel-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.panel-heading strong { font-size: 14px; }
+.panel-heading .hud-button { min-width: 32px; min-height: 32px; padding: 3px; }
+.pixel-panel .roster-list { padding: 3px 2px 8px; margin-bottom: 10px; }
+.pixel-panel .roster-member { min-width: 88px; padding: 4px 6px; }
+.pixel-panel .roster-portrait { width: 25px; height: 33px; }
+.pixel-panel .roster-copy small { display: none; }
+.pixel-panel .member-summary h2 { font-size: 18px; }
+.pixel-panel .portrait-frame { height: 49px; }
+.pixel-panel .stats { margin: 10px 0 12px; padding-bottom: 9px; }
+.pixel-panel .action-options button { min-height: 53px; }
+.pixel-panel .action-explanation:empty { display: none; }
+.pixel-panel .schedule-box { min-height: 92px; }
+.pixel-panel .member-footer { margin-top: 10px; padding-top: 9px; }
+.pixel-panel .sell-button { display: inline-flex; align-items: center; gap: 4px; }
+.pixel-panel .operations-grid { grid-template-columns: 1fr; gap: 16px; padding: 0 0 8px; }
+.pixel-panel button, dialog button, dialog { border-radius: 0; }
+.pixel-panel .action-tabs { border-radius: 0; }
+.pixel-panel .job-progress, .pixel-panel .small-progress { border-radius: 0; }
+.asset-message { z-index: 3; border-radius: 0; }
+.toast { bottom: max(20px, env(safe-area-inset-bottom)); border-radius: 0; clip-path: var(--step); }
+@media (max-width: 520px) {
+  .hud { gap: 4px; }
+  .hud .resources, .hud .playback-controls { gap: 3px; }
+  .hud-button, .resources .gold { padding-inline: 6px; }
+  .world-signs button { min-height: 44px; }
+}
